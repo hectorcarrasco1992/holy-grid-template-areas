@@ -1,17 +1,11 @@
 #app {
   display: grid;
   height: 300px;
-  display: grid;
   grid-template-areas:
-  'area1 area1 area1 area1'
-  'nav main main  ad'
-  'nav main1 main1 ad'
-  'foot foot foot foot'
-  
-  
-  
-  
-  
+  'area1 area1 area1'
+  'nav main ads'
+  'nav main1 ads'
+  'foot foot foot'
   ;
 }
 
@@ -20,7 +14,7 @@
 }
 
 #header {
-  grid-area: area1
+  grid-area: area1;
   
 }
 
@@ -29,25 +23,25 @@
 }
 
 #main {
-  background-color: #F7F5D8
+  background-color: #F7F5D8;
 }
 
 #article-1 {
   background-color: lightcoral;
-  grid-area: main
+  grid-area: main;
 }
 
 #article-2 {
   background-color: violet;
-  grid-area: main1
+  grid-area: main1;
 }
 
 #nav {
   background-color: cornflowerblue;
-  grid-area: nav
+  grid-area: nav;
 }
 
-#ad-area {
-  background-color: cornflowerblue;
-  grid-area: ad;
+#thing {
+  background-color: black;
+  grid-area: ads;
 }
