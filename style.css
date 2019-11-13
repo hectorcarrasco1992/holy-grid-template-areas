@@ -1,6 +1,18 @@
 #app {
   display: grid;
   height: 300px;
+  display: grid;
+  grid-template-areas:
+  'area1 area1 area1 area1'
+  'nav main main  ad'
+  'nav main1 main1 ad'
+  'foot foot foot foot'
+  
+  
+  
+  
+  
+  ;
 }
 
 #header, #footer {
@@ -8,11 +20,12 @@
 }
 
 #header {
+  grid-area: area1
   
 }
 
 #footer {
-  
+  grid-area: foot;
 }
 
 #main {
@@ -21,16 +34,20 @@
 
 #article-1 {
   background-color: lightcoral;
+  grid-area: main
 }
 
 #article-2 {
   background-color: violet;
+  grid-area: main1
 }
 
 #nav {
   background-color: cornflowerblue;
+  grid-area: nav
 }
 
 #ad-area {
   background-color: cornflowerblue;
+  grid-area: ad;
 }
